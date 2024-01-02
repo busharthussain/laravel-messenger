@@ -20,7 +20,7 @@
                                                         <div class="messenger-avatar-xs">
                                                             <span
                                                                 class="messenger-avatar-title messenger-rounded-circle messenger-bg-primary messenger-text-white">
-                                                                <span class="messenger-username">{{ \App\Helpers\Messenger::nameLetters($user['id']) }}</span>
+                                                                <span class="messenger-username">{{ \bushart\messenger\Helpers\Messenger::nameLetters($user['id']) }}</span>
                                                                 <span class="messenger-user-status"></span>
                                                             </span>
                                                         </div>

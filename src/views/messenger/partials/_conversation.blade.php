@@ -107,7 +107,7 @@
                                         <div class="messenger-d-flex messenger-align-items-center messenger-attached-file">
                                             <div class="messenger-flex-shrink-0 messenger-avatar-sm messenger-me-3 messenger-ms-0 messenger-attached-file-avatar">
                                                 <div class="messenger-avatar-title {{ $bgSoftLight }} messenger-rounded-circle messenger-fs-20">
-                                                    <i class="{{ \App\Helpers\Messenger::getFileIcon($message['file_type']) }}"></i>
+                                                    <i class="{{ \bushart\messenger\Helpers\Messenger::getFileIcon($message['file_type']) }}"></i>
                                                 </div>
                                             </div>
                                             <div class="messenger-flex-grow-1 messenger-overflow-hidden">

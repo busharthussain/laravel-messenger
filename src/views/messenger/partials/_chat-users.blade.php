@@ -17,7 +17,7 @@
                                                     <div class="messenger-chat-user-img messenger-online messenger-align-self-center messenger-me-2 messenger-ms-0">
                                                         <div class="messenger-avatar-xs">
                                                             <span class="messenger-avatar-title messenger-rounded-circle messenger-bg-primary messenger-text-white">
-                                                                <span class="messenger-username">{{ \App\Helpers\Messenger::nameLetters($user['id']) }}</span>
+                                                                <span class="messenger-username">{{ \bushart\messenger\Helpers\Messenger::nameLetters($user['id']) }}</span>
                                                                 <span class="messenger-user-status"></span>
                                                             </span>
                                                         </div>
@@ -35,7 +35,7 @@
                                                         </p>
                                                     </div>
                                                     @php
-                                                        $unseen = \App\Helpers\Messenger::getUnseenMessagesCount($user['id']);
+                                                        $unseen = \bushart\messenger\Helpers\Messenger::getUnseenMessagesCount($user['id']);
                                                     @endphp
                                                     @if(!empty($unseen))
                                                         <div class="messenger-ms-auto">

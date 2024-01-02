@@ -21,7 +21,7 @@ class MessengerController extends Controller
         $this->data['users'] = User::where('id', '!=', Messenger::loginId())->get()->toArray();
         $this->data['chatUsers'] = $this->chatUsers();
 
-        return view('messenger.index', $this->data);
+        return view('messenger::index', $this->data);
     }
 
     /**
@@ -163,7 +163,7 @@ class MessengerController extends Controller
             $this->data['chat_id'] = $chatId;
             $this->data['unseenMessages'] = Message::unseenMessages($user);
             $this->getChatData($chatId);
-            $this->data['conversation'] = view('messenger.partials._conversation', $this->data)->render();
+            $this->data['conversation'] = view('messenger::partials._conversation', $this->data)->render();
         }
 
         return response()->json(['data' => $this->data]);
@@ -185,7 +185,7 @@ class MessengerController extends Controller
             $this->data['user_name'] = $user->name;
             $this->data['chat_id'] = $data['chat_id'];
             $this->getChatData($data['chat_id']);
-            $this->data['conversation'] = view('messenger.partials._conversation', $this->data)->render();
+            $this->data['conversation'] = view('messenger::partials._conversation', $this->data)->render();
         }
 
         return response()->json(['data' => $this->data]);

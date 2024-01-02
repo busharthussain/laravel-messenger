@@ -1,0 +1,44 @@
+{
+    "name": "bushart/laravel-messenger",
+    "description": "A package for Laravel PHP Framework to add a complete real-time chat system.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "messenger",
+        "conversations",
+        "chat",
+        "php",
+        "pusher",
+        "realtime",
+        "real-time",
+        "Messenger"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bushart Hussain",
+            "email": "busharthussain@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/busharthussain/laravel-messenger",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "pusher/pusher-php-server": "^6.0|^7.0|^7.1",
+        "league/flysystem-aws-s3-v3": "^3.22",
+        "niklasravnsborg/laravel-pdf": "^4.1",
+        "google/cloud-storage": "^1.32"
+    },
+    "autoload": {
+        "psr-4": {
+            "bushart\\messenger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bushart\\messenger\\MessengerServiceProvider"
+            ]
+        }
+    }
+}

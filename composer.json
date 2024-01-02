@@ -25,9 +25,7 @@
     "prefer-stable": true,
     "require": {
         "pusher/pusher-php-server": "^6.0|^7.0|^7.1",
-        "league/flysystem-aws-s3-v3": "^3.22",
-        "niklasravnsborg/laravel-pdf": "^4.1",
-        "google/cloud-storage": "^1.32"
+        "niklasravnsborg/laravel-pdf": "^4.1"
     },
     "autoload": {
         "psr-4": {

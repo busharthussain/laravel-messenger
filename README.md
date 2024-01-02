@@ -148,6 +148,18 @@ This value is the name for the messenger displayed in the UI
 'storage_disk_name' => env('MESSENGER_STORAGE_DISK', 'public'),
 ```
 
+If you want to use Google to upload files. You will have to install the google cloud to your project.
+
+```
+composer require google/cloud-storage
+```
+
+If you want to use AWS S3 for upload file. You will have to install the aws s3 sdk to your project.
+
+```
+composer require league/flysystem-aws-s3-v3
+```
+
 #### File Icons Configuration (Excluding Images and Videos)
 
 Define file extensions and their respective icons to display for uploaded files (excluding images and videos).
